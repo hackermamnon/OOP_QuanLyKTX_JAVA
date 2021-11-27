@@ -33,16 +33,16 @@ public class QuanLyKTX {
 	}
 	public static void TaoDanhSachThietBi()
 	{
-		dsThietBi.add(new ThietBi("QT", "Quạt treo"));//0
-		dsThietBi.add(new ThietBi("ML", "Máy lạnh"));//1
-		dsThietBi.add(new ThietBi("QĐ", "Quạt đứng"));//2
-		dsThietBi.add(new ThietBi("BH", "Bàn học"));//3
-		dsThietBi.add(new ThietBi("ĐH", "Đèn học"));//4
-		dsThietBi.add(new ThietBi("QTr", "Quạt trần"));//5
-		dsThietBi.add(new ThietBi("TĐ", "Tủ đồ cá nhân"));//6
-		dsThietBi.add(new ThietBi("Ghe", "Ghế ngồi"));//7
-		dsThietBi.add(new ThietBi("MTD", "Móc treo đồ"));//8
-		dsThietBi.add(new ThietBi("OCD", "Ổ cắm điện"));//9
+		dsThietBi.add(new ThietBi("QT", "Quáº¡t treo"));//0
+		dsThietBi.add(new ThietBi("ML", "MÃ¡y láº¡nh"));//1
+		dsThietBi.add(new ThietBi("QÄ�", "Quáº¡t Ä‘á»©ng"));//2
+		dsThietBi.add(new ThietBi("BH", "BÃ n há»�c"));//3
+		dsThietBi.add(new ThietBi("Ä�H", "Ä�Ã¨n há»�c"));//4
+		dsThietBi.add(new ThietBi("QTr", "Quáº¡t tráº§n"));//5
+		dsThietBi.add(new ThietBi("TÄ�", "Tá»§ Ä‘á»“ cÃ¡ nhÃ¢n"));//6
+		dsThietBi.add(new ThietBi("Ghe", "Gháº¿ ngá»“i"));//7
+		dsThietBi.add(new ThietBi("MTD", "MÃ³c treo Ä‘á»“"));//8
+		dsThietBi.add(new ThietBi("OCD", "á»” cáº¯m Ä‘iá»‡n"));//9
 
 
 		dsTrangBi.get(0).dsthietbi_loaiphong.add(dsThietBi.get(1));
@@ -220,44 +220,44 @@ public class QuanLyKTX {
 	}
 	public static void TaoDanhSachLoaiNhanVien()
 	{
-		dsLoaiNhanVien.add(new LoaiNhanVien("LNV01", "Lao công", "Quét sân", new ArrayList<NhanVien>(), null));
-		dsLoaiNhanVien.add(new LoaiNhanVien("LNV02", "Phụ bếp", "Dọn dẹp nhà bếp", new ArrayList<NhanVien>(), null));
-		dsLoaiNhanVien.add(new LoaiNhanVien("LNV03", "Đầu bếp", "Nấu ăn", new ArrayList<NhanVien>(), null));
-		dsLoaiNhanVien.add(new LoaiNhanVien("LNV04", "Bảo vệ", "Canh cổng ra vào", new ArrayList<NhanVien>(), null));
-		dsLoaiNhanVien.add(new LoaiNhanVien("LNV05", "Sửa điện", "Xử lý vấn đề về điện", new ArrayList<NhanVien>(), null));
+		dsLoaiNhanVien.add(new LoaiNhanVien("LNV01", "Lao cÃ´ng", "QuÃ©t sÃ¢n", new ArrayList<NhanVien>(), null));
+		dsLoaiNhanVien.add(new LoaiNhanVien("LNV02", "Phá»¥ báº¿p", "Dá»�n dáº¹p nhÃ  báº¿p", new ArrayList<NhanVien>(), null));
+		dsLoaiNhanVien.add(new LoaiNhanVien("LNV03", "Ä�áº§u báº¿p", "Náº¥u Äƒn", new ArrayList<NhanVien>(), null));
+		dsLoaiNhanVien.add(new LoaiNhanVien("LNV04", "Báº£o vá»‡", "Canh cá»•ng ra vÃ o", new ArrayList<NhanVien>(), null));
+		dsLoaiNhanVien.add(new LoaiNhanVien("LNV05", "Sá»­a Ä‘iá»‡n", "Xá»­ lÃ½ váº¥n Ä‘á»� vá»� Ä‘iá»‡n", new ArrayList<NhanVien>(), null));
 	}
 	public static void TaoDanhSachNhanVien()
 	{
-		dsNhanVien.add(new NhanVien("NV01", dsLoaiNhanVien.get(0).maLoaiNV, dsToa.get(1).maToa, "Phan Quang Đạt", "0321550699", 12000000, dsLoaiNhanVien.get(0), dsToa.get(1)));
-		dsNhanVien.add(new NhanVien("NV02", dsLoaiNhanVien.get(0).maLoaiNV, dsToa.get(1).maToa, "Nguyễn Hoàng Hải", "0935538764", 10500000, dsLoaiNhanVien.get(0), dsToa.get(1)));
-		dsNhanVien.add(new NhanVien("NV03", dsLoaiNhanVien.get(1).maLoaiNV, dsToa.get(2).maToa, "Phan Ninh Thuật", "0375512722", 12500000, dsLoaiNhanVien.get(1), dsToa.get(2)));
-		dsNhanVien.add(new NhanVien("NV04", dsLoaiNhanVien.get(4).maLoaiNV, dsToa.get(2).maToa, "Văn Viết Hồng", "0933592539", 15500000, dsLoaiNhanVien.get(4), dsToa.get(2)));
-		dsNhanVien.add(new NhanVien("NV05", dsLoaiNhanVien.get(2).maLoaiNV, dsToa.get(3).maToa, "Vũ Hoàng Lâm", "0873562883", 11300000, dsLoaiNhanVien.get(2), dsToa.get(3)));
-		dsNhanVien.add(new NhanVien("NV06", dsLoaiNhanVien.get(2).maLoaiNV, dsToa.get(3).maToa, "Trần Văn Tài", "0376588314", 14800000, dsLoaiNhanVien.get(2), dsToa.get(3)));
-		dsNhanVien.add(new NhanVien("NV07", dsLoaiNhanVien.get(3).maLoaiNV, dsToa.get(3).maToa, "Nguyễn Thị Bích Châu", "0935543050", 18200000, dsLoaiNhanVien.get(3), dsToa.get(3)));
-		dsNhanVien.add(new NhanVien("NV08", dsLoaiNhanVien.get(3).maLoaiNV, dsToa.get(0).maToa, "Trần Hạnh Vy", "0835559895", 11500000, dsLoaiNhanVien.get(3), dsToa.get(0)));
-		dsNhanVien.add(new NhanVien("NV09", dsLoaiNhanVien.get(2).maLoaiNV, dsToa.get(1).maToa, "Trần Phương Thanh", "0855586047", 12000000, dsLoaiNhanVien.get(2), dsToa.get(1)));
-		dsNhanVien.add(new NhanVien("NV10", dsLoaiNhanVien.get(1).maLoaiNV, dsToa.get(2).maToa, "Ngô Ngọc Huế", "0935517709", 13500000, dsLoaiNhanVien.get(1), dsToa.get(2)));
-		dsNhanVien.add(new NhanVien("NV11", dsLoaiNhanVien.get(3).maLoaiNV, dsToa.get(1).maToa, "Khưu Hoài Bắc", "0952114939", 13000000, dsLoaiNhanVien.get(3), dsToa.get(1)));
-		dsNhanVien.add(new NhanVien("NV12", dsLoaiNhanVien.get(3).maLoaiNV, dsToa.get(1).maToa, "Tôn Yên Bình", "0933213448", 11500000, dsLoaiNhanVien.get(3), dsToa.get(1)));
-		dsNhanVien.add(new NhanVien("NV13", dsLoaiNhanVien.get(3).maLoaiNV, dsToa.get(2).maToa, "Nguyễn Nguyên Khôi", "0941527983", 13500000, dsLoaiNhanVien.get(3), dsToa.get(2)));
-		dsNhanVien.add(new NhanVien("NV14", dsLoaiNhanVien.get(3).maLoaiNV, dsToa.get(2).maToa, "Hoàng Hiệp Hà", "0992525872", 16500000, dsLoaiNhanVien.get(3), dsToa.get(2)));
-		dsNhanVien.add(new NhanVien("NV15", dsLoaiNhanVien.get(0).maLoaiNV, dsToa.get(3).maToa, "Lâm Phi Hùng", "0991204916", 12300000, dsLoaiNhanVien.get(0), dsToa.get(3)));
-		dsNhanVien.add(new NhanVien("NV16", dsLoaiNhanVien.get(4).maLoaiNV, dsToa.get(3).maToa, "Trần Tấn Nam", "0967537105", 15800000, dsLoaiNhanVien.get(4), dsToa.get(3)));
-		dsNhanVien.add(new NhanVien("NV17", dsLoaiNhanVien.get(4).maLoaiNV, dsToa.get(3).maToa, "Trần Minh Tiến", "0938910107", 19200000, dsLoaiNhanVien.get(4), dsToa.get(3)));
-		dsNhanVien.add(new NhanVien("NV18", dsLoaiNhanVien.get(4).maLoaiNV, dsToa.get(0).maToa, "Phạm Minh Thiện", "0921507874", 12500000, dsLoaiNhanVien.get(4), dsToa.get(0)));
-		dsNhanVien.add(new NhanVien("NV19", dsLoaiNhanVien.get(2).maLoaiNV, dsToa.get(1).maToa, "Hoàng Công Bằng", "0973125823", 13000000, dsLoaiNhanVien.get(2), dsToa.get(1)));
-		dsNhanVien.add(new NhanVien("NV20", dsLoaiNhanVien.get(2).maLoaiNV, dsToa.get(2).maToa, "Nguyễn Thành Công", "0931213547", 13500000, dsLoaiNhanVien.get(2), dsToa.get(2)));
-		dsNhanVien.add(new NhanVien("NV21", dsLoaiNhanVien.get(0).maLoaiNV, dsToa.get(1).maToa, "Bùi Trọng Kim", "0935181991", 12000000, dsLoaiNhanVien.get(0), dsToa.get(1)));
-		dsNhanVien.add(new NhanVien("NV22", dsLoaiNhanVien.get(0).maLoaiNV, dsToa.get(1).maToa, "Đào Phi Hải", "0912529277", 10500000, dsLoaiNhanVien.get(0), dsToa.get(1)));
-		dsNhanVien.add(new NhanVien("NV23", dsLoaiNhanVien.get(0).maLoaiNV, dsToa.get(2).maToa, "Trịnh Thiện Luân", "0987558119", 12500000, dsLoaiNhanVien.get(0), dsToa.get(2)));
-		dsNhanVien.add(new NhanVien("NV24", dsLoaiNhanVien.get(1).maLoaiNV, dsToa.get(2).maToa, "Nguyễn Quang Ninh", "0935502239", 15500000, dsLoaiNhanVien.get(1), dsToa.get(2)));
-		dsNhanVien.add(new NhanVien("NV25", dsLoaiNhanVien.get(1).maLoaiNV, dsToa.get(3).maToa, "Trần Minh Thạc", "0936457259", 10300000, dsLoaiNhanVien.get(1), dsToa.get(3)));
-		dsNhanVien.add(new NhanVien("NV26", dsLoaiNhanVien.get(1).maLoaiNV, dsToa.get(3).maToa, "Nguyễn Minh Thạc", "0935599247", 14800000, dsLoaiNhanVien.get(1), dsToa.get(3)));
-		dsNhanVien.add(new NhanVien("NV27", dsLoaiNhanVien.get(0).maLoaiNV, dsToa.get(3).maToa, "Trần Công Ân", "0912590004", 17200000, dsLoaiNhanVien.get(0), dsToa.get(3)));
-		dsNhanVien.add(new NhanVien("NV28", dsLoaiNhanVien.get(0).maLoaiNV, dsToa.get(0).maToa, "Mạnh Gia Bình", "0958974792", 9500000, dsLoaiNhanVien.get(0), dsToa.get(0)));
-		dsNhanVien.add(new NhanVien("NV29", dsLoaiNhanVien.get(0).maLoaiNV, dsToa.get(1).maToa, "Thịnh Bảo Lâm", "0915501907", 11000000, dsLoaiNhanVien.get(0), dsToa.get(1)));
-		dsNhanVien.add(new NhanVien("NV30", dsLoaiNhanVien.get(0).maLoaiNV, dsToa.get(2).maToa, "Nguyễn Cao Tiến", "0958585889", 12500000, dsLoaiNhanVien.get(0), dsToa.get(2)));
+		dsNhanVien.add(new NhanVien("NV01", dsLoaiNhanVien.get(0).maLoaiNV, dsToa.get(1).maToa, "Phan Quang Ä�áº¡t", "0321550699", 12000000, dsLoaiNhanVien.get(0), dsToa.get(1)));
+		dsNhanVien.add(new NhanVien("NV02", dsLoaiNhanVien.get(0).maLoaiNV, dsToa.get(1).maToa, "Nguyá»…n HoÃ ng Háº£i", "0935538764", 10500000, dsLoaiNhanVien.get(0), dsToa.get(1)));
+		dsNhanVien.add(new NhanVien("NV03", dsLoaiNhanVien.get(1).maLoaiNV, dsToa.get(2).maToa, "Phan Ninh Thuáº­t", "0375512722", 12500000, dsLoaiNhanVien.get(1), dsToa.get(2)));
+		dsNhanVien.add(new NhanVien("NV04", dsLoaiNhanVien.get(4).maLoaiNV, dsToa.get(2).maToa, "VÄƒn Viáº¿t Há»“ng", "0933592539", 15500000, dsLoaiNhanVien.get(4), dsToa.get(2)));
+		dsNhanVien.add(new NhanVien("NV05", dsLoaiNhanVien.get(2).maLoaiNV, dsToa.get(3).maToa, "VÅ© HoÃ ng LÃ¢m", "0873562883", 11300000, dsLoaiNhanVien.get(2), dsToa.get(3)));
+		dsNhanVien.add(new NhanVien("NV06", dsLoaiNhanVien.get(2).maLoaiNV, dsToa.get(3).maToa, "Tráº§n VÄƒn TÃ i", "0376588314", 14800000, dsLoaiNhanVien.get(2), dsToa.get(3)));
+		dsNhanVien.add(new NhanVien("NV07", dsLoaiNhanVien.get(3).maLoaiNV, dsToa.get(3).maToa, "Nguyá»…n Thá»‹ BÃ­ch ChÃ¢u", "0935543050", 18200000, dsLoaiNhanVien.get(3), dsToa.get(3)));
+		dsNhanVien.add(new NhanVien("NV08", dsLoaiNhanVien.get(3).maLoaiNV, dsToa.get(0).maToa, "Tráº§n Háº¡nh Vy", "0835559895", 11500000, dsLoaiNhanVien.get(3), dsToa.get(0)));
+		dsNhanVien.add(new NhanVien("NV09", dsLoaiNhanVien.get(2).maLoaiNV, dsToa.get(1).maToa, "Tráº§n PhÆ°Æ¡ng Thanh", "0855586047", 12000000, dsLoaiNhanVien.get(2), dsToa.get(1)));
+		dsNhanVien.add(new NhanVien("NV10", dsLoaiNhanVien.get(1).maLoaiNV, dsToa.get(2).maToa, "NgÃ´ Ngá»�c Huáº¿", "0935517709", 13500000, dsLoaiNhanVien.get(1), dsToa.get(2)));
+		dsNhanVien.add(new NhanVien("NV11", dsLoaiNhanVien.get(3).maLoaiNV, dsToa.get(1).maToa, "KhÆ°u HoÃ i Báº¯c", "0952114939", 13000000, dsLoaiNhanVien.get(3), dsToa.get(1)));
+		dsNhanVien.add(new NhanVien("NV12", dsLoaiNhanVien.get(3).maLoaiNV, dsToa.get(1).maToa, "TÃ´n YÃªn BÃ¬nh", "0933213448", 11500000, dsLoaiNhanVien.get(3), dsToa.get(1)));
+		dsNhanVien.add(new NhanVien("NV13", dsLoaiNhanVien.get(3).maLoaiNV, dsToa.get(2).maToa, "Nguyá»…n NguyÃªn KhÃ´i", "0941527983", 13500000, dsLoaiNhanVien.get(3), dsToa.get(2)));
+		dsNhanVien.add(new NhanVien("NV14", dsLoaiNhanVien.get(3).maLoaiNV, dsToa.get(2).maToa, "HoÃ ng Hiá»‡p HÃ ", "0992525872", 16500000, dsLoaiNhanVien.get(3), dsToa.get(2)));
+		dsNhanVien.add(new NhanVien("NV15", dsLoaiNhanVien.get(0).maLoaiNV, dsToa.get(3).maToa, "LÃ¢m Phi HÃ¹ng", "0991204916", 12300000, dsLoaiNhanVien.get(0), dsToa.get(3)));
+		dsNhanVien.add(new NhanVien("NV16", dsLoaiNhanVien.get(4).maLoaiNV, dsToa.get(3).maToa, "Tráº§n Táº¥n Nam", "0967537105", 15800000, dsLoaiNhanVien.get(4), dsToa.get(3)));
+		dsNhanVien.add(new NhanVien("NV17", dsLoaiNhanVien.get(4).maLoaiNV, dsToa.get(3).maToa, "Tráº§n Minh Tiáº¿n", "0938910107", 19200000, dsLoaiNhanVien.get(4), dsToa.get(3)));
+		dsNhanVien.add(new NhanVien("NV18", dsLoaiNhanVien.get(4).maLoaiNV, dsToa.get(0).maToa, "Pháº¡m Minh Thiá»‡n", "0921507874", 12500000, dsLoaiNhanVien.get(4), dsToa.get(0)));
+		dsNhanVien.add(new NhanVien("NV19", dsLoaiNhanVien.get(2).maLoaiNV, dsToa.get(1).maToa, "HoÃ ng CÃ´ng Báº±ng", "0973125823", 13000000, dsLoaiNhanVien.get(2), dsToa.get(1)));
+		dsNhanVien.add(new NhanVien("NV20", dsLoaiNhanVien.get(2).maLoaiNV, dsToa.get(2).maToa, "Nguyá»…n ThÃ nh CÃ´ng", "0931213547", 13500000, dsLoaiNhanVien.get(2), dsToa.get(2)));
+		dsNhanVien.add(new NhanVien("NV21", dsLoaiNhanVien.get(0).maLoaiNV, dsToa.get(1).maToa, "BÃ¹i Trá»�ng Kim", "0935181991", 12000000, dsLoaiNhanVien.get(0), dsToa.get(1)));
+		dsNhanVien.add(new NhanVien("NV22", dsLoaiNhanVien.get(0).maLoaiNV, dsToa.get(1).maToa, "Ä�Ã o Phi Háº£i", "0912529277", 10500000, dsLoaiNhanVien.get(0), dsToa.get(1)));
+		dsNhanVien.add(new NhanVien("NV23", dsLoaiNhanVien.get(0).maLoaiNV, dsToa.get(2).maToa, "Trá»‹nh Thiá»‡n LuÃ¢n", "0987558119", 12500000, dsLoaiNhanVien.get(0), dsToa.get(2)));
+		dsNhanVien.add(new NhanVien("NV24", dsLoaiNhanVien.get(1).maLoaiNV, dsToa.get(2).maToa, "Nguyá»…n Quang Ninh", "0935502239", 15500000, dsLoaiNhanVien.get(1), dsToa.get(2)));
+		dsNhanVien.add(new NhanVien("NV25", dsLoaiNhanVien.get(1).maLoaiNV, dsToa.get(3).maToa, "Tráº§n Minh Tháº¡c", "0936457259", 10300000, dsLoaiNhanVien.get(1), dsToa.get(3)));
+		dsNhanVien.add(new NhanVien("NV26", dsLoaiNhanVien.get(1).maLoaiNV, dsToa.get(3).maToa, "Nguyá»…n Minh Tháº¡c", "0935599247", 14800000, dsLoaiNhanVien.get(1), dsToa.get(3)));
+		dsNhanVien.add(new NhanVien("NV27", dsLoaiNhanVien.get(0).maLoaiNV, dsToa.get(3).maToa, "Tráº§n CÃ´ng Ã‚n", "0912590004", 17200000, dsLoaiNhanVien.get(0), dsToa.get(3)));
+		dsNhanVien.add(new NhanVien("NV28", dsLoaiNhanVien.get(0).maLoaiNV, dsToa.get(0).maToa, "Máº¡nh Gia BÃ¬nh", "0958974792", 9500000, dsLoaiNhanVien.get(0), dsToa.get(0)));
+		dsNhanVien.add(new NhanVien("NV29", dsLoaiNhanVien.get(0).maLoaiNV, dsToa.get(1).maToa, "Thá»‹nh Báº£o LÃ¢m", "0915501907", 11000000, dsLoaiNhanVien.get(0), dsToa.get(1)));
+		dsNhanVien.add(new NhanVien("NV30", dsLoaiNhanVien.get(0).maLoaiNV, dsToa.get(2).maToa, "Nguyá»…n Cao Tiáº¿n", "0958585889", 12500000, dsLoaiNhanVien.get(0), dsToa.get(2)));
 
 		dsLoaiNhanVien.get(0).dsnhanvien_loai.add(dsNhanVien.get(0));
 		dsLoaiNhanVien.get(0).dsnhanvien_loai.add(dsNhanVien.get(1));
@@ -296,7 +296,7 @@ public class QuanLyKTX {
 		dsLoaiNhanVien.get(4).dsnhanvien_loai.add(dsNhanVien.get(16));
 		dsLoaiNhanVien.get(4).dsnhanvien_loai.add(dsNhanVien.get(17));
 
-		//mã quản lý 0 - 2 - 4 - 6 - 3
+		//mÃ£ quáº£n lÃ½ 0 - 2 - 4 - 6 - 3
 		dsLoaiNhanVien.get(0).quanLy = new NhanVien(dsNhanVien.get(0));
 		dsLoaiNhanVien.get(0).maQuanLy = dsNhanVien.get(0).maNV;
 
@@ -322,12 +322,12 @@ public class QuanLyKTX {
 	}
 	public static void TaoDanhSachLoaiPhong()
 	{
-		dsLoaiPhong.add(new LoaiPhong("PML04", "Phòng máy lạnh 4 người", 4000000, new ArrayList<Phong>()));
-		dsLoaiPhong.add(new LoaiPhong("PML06", "Phòng máy lạnh 6 người", 5500000, new ArrayList<Phong>()));
-		dsLoaiPhong.add(new LoaiPhong("PML08", "Phòng máy lạnh 8 người", 7500000, new ArrayList<Phong>()));
-		dsLoaiPhong.add(new LoaiPhong("PQ04", "Phòng quạt 4 người", 2500000, new ArrayList<Phong>()));
-		dsLoaiPhong.add(new LoaiPhong("PQ06", "Phòng quạt 6 người", 3500000, new ArrayList<Phong>()));
-		dsLoaiPhong.add(new LoaiPhong("PQ08", "Phòng quạt 8 người", 4500000, new ArrayList<Phong>()));
+		dsLoaiPhong.add(new LoaiPhong("PML04", "PhÃ²ng mÃ¡y láº¡nh 4 ngÆ°á»�i", 4000000, new ArrayList<Phong>()));
+		dsLoaiPhong.add(new LoaiPhong("PML06", "PhÃ²ng mÃ¡y láº¡nh 6 ngÆ°á»�i", 5500000, new ArrayList<Phong>()));
+		dsLoaiPhong.add(new LoaiPhong("PML08", "PhÃ²ng mÃ¡y láº¡nh 8 ngÆ°á»�i", 7500000, new ArrayList<Phong>()));
+		dsLoaiPhong.add(new LoaiPhong("PQ04", "PhÃ²ng quáº¡t 4 ngÆ°á»�i", 2500000, new ArrayList<Phong>()));
+		dsLoaiPhong.add(new LoaiPhong("PQ06", "PhÃ²ng quáº¡t 6 ngÆ°á»�i", 3500000, new ArrayList<Phong>()));
+		dsLoaiPhong.add(new LoaiPhong("PQ08", "PhÃ²ng quáº¡t 8 ngÆ°á»�i", 4500000, new ArrayList<Phong>()));
 	}
 
 	public static void TaoDanhSachPhong()
@@ -436,36 +436,36 @@ public class QuanLyKTX {
 	}
 	public static void TaoDanhSachSinhVien()
 	{
-		dsSinhVien.add(new SinhVien("SV01", "Văn Minh Anh", true, "0335573464", dsPhong.get(0)));
-		dsSinhVien.add(new SinhVien("SV02", "Kha Sỹ Phú", true, "0955546106", dsPhong.get(0)));
-		dsSinhVien.add(new SinhVien("SV03", "Phan Phúc Lâm", true, "0875516075", dsPhong.get(1)));
-		dsSinhVien.add(new SinhVien("SV04", "Trần Trung Thế", true, "0335555459", dsPhong.get(1)));
-		dsSinhVien.add(new SinhVien("SV05", "Cao Đăng Ngọc Quý", true, "0995578740", dsPhong.get(1)));
-		dsSinhVien.add(new SinhVien("SV06", "Phạm Vĩnh Long", true, "0335558622", dsPhong.get(5)));
-		dsSinhVien.add(new SinhVien("SV07", "Tạ Bạch Cúc", false, "0935505935", dsPhong.get(2)));
-		dsSinhVien.add(new SinhVien("SV08", "Mai Kiều Hoa", false, "0855533475", dsPhong.get(2)));
-		dsSinhVien.add(new SinhVien("SV09", "Mai Phương Thúy", false, "0955515045", dsPhong.get(3)));
-		dsSinhVien.add(new SinhVien("SV10", "Hoàng Phương Thảo", false, "0895501461", dsPhong.get(3)));
-		dsSinhVien.add(new SinhVien("SV11", "Trần Quang Bửu", true, "09732588394", dsPhong.get(4)));
-		dsSinhVien.add(new SinhVien("SV12", "Nguyễn Quang Dũng", true, "03312598591", dsPhong.get(4)));
-		dsSinhVien.add(new SinhVien("SV13", "Nguyễn Thiện Giang", true, "09331529049", dsPhong.get(5)));
-		dsSinhVien.add(new SinhVien("SV14", "Nguyễn Trọng Khánh", true, "09556752852", dsPhong.get(5)));
-		dsSinhVien.add(new SinhVien("SV15", "Phan Bảo Long", true, "03758710360", dsPhong.get(6)));
-		dsSinhVien.add(new SinhVien("SV16", "Cao Khắc Minh", true, "03512548013", dsPhong.get(6)));
-		dsSinhVien.add(new SinhVien("SV17", "Đoàn Kiên Trung", true, "09655516844", dsPhong.get(6)));
-		dsSinhVien.add(new SinhVien("SV18", "Huỳnh Huy Cường", true, "03578507626", dsPhong.get(10)));
-		dsSinhVien.add(new SinhVien("SV19", "Danh Hoàng Giang", true, "098559527928", dsPhong.get(10)));
-		dsSinhVien.add(new SinhVien("SV20", "Đỗ Mỹ Loan", false, "03515538943", dsPhong.get(11)));
-		dsSinhVien.add(new SinhVien("SV21", "Nguyễn Phương Lan", false, "09959743180", dsPhong.get(11)));
-		dsSinhVien.add(new SinhVien("SV22", "Trịnh Thúy Anh", false, "03565533549", dsPhong.get(11)));
-		dsSinhVien.add(new SinhVien("SV23", "Lương Bạch Loan", false, "09351210183", dsPhong.get(12)));
-		dsSinhVien.add(new SinhVien("SV24", "Nghiêm Diệu Hà", false, "03364557138", dsPhong.get(12)));
-		dsSinhVien.add(new SinhVien("SV25", "Nguyễn Hải Châu", false, "0333129573", dsPhong.get(12)));
-		dsSinhVien.add(new SinhVien("SV26", "Vũ Bạch Yến", false, "0335979171", dsPhong.get(14)));
-		dsSinhVien.add(new SinhVien("SV27", "Nguyễn Bích Thủy", false, "09915542642", dsPhong.get(14)));
-		dsSinhVien.add(new SinhVien("SV28", "Việt Mỹ Kiều", false, "09532563250", dsPhong.get(15)));
-		dsSinhVien.add(new SinhVien("SV29", "Nguyễn Linh Sương Sương", false, "09857975293", dsPhong.get(15)));
-		dsSinhVien.add(new SinhVien("SV30", "Vũ Bích Vân", false, "03368595027", dsPhong.get(15)));
+		dsSinhVien.add(new SinhVien("SV01", "VÄƒn Minh Anh", true, "0335573464", dsPhong.get(0)));
+		dsSinhVien.add(new SinhVien("SV02", "Kha Sá»¹ PhÃº", true, "0955546106", dsPhong.get(0)));
+		dsSinhVien.add(new SinhVien("SV03", "Phan PhÃºc LÃ¢m", true, "0875516075", dsPhong.get(1)));
+		dsSinhVien.add(new SinhVien("SV04", "Tráº§n Trung Tháº¿", true, "0335555459", dsPhong.get(1)));
+		dsSinhVien.add(new SinhVien("SV05", "Cao Ä�Äƒng Ngá»�c QuÃ½", true, "0995578740", dsPhong.get(1)));
+		dsSinhVien.add(new SinhVien("SV06", "Pháº¡m VÄ©nh Long", true, "0335558622", dsPhong.get(5)));
+		dsSinhVien.add(new SinhVien("SV07", "Táº¡ Báº¡ch CÃºc", false, "0935505935", dsPhong.get(2)));
+		dsSinhVien.add(new SinhVien("SV08", "Mai Kiá»�u Hoa", false, "0855533475", dsPhong.get(2)));
+		dsSinhVien.add(new SinhVien("SV09", "Mai PhÆ°Æ¡ng ThÃºy", false, "0955515045", dsPhong.get(3)));
+		dsSinhVien.add(new SinhVien("SV10", "HoÃ ng PhÆ°Æ¡ng Tháº£o", false, "0895501461", dsPhong.get(3)));
+		dsSinhVien.add(new SinhVien("SV11", "Tráº§n Quang Bá»­u", true, "09732588394", dsPhong.get(4)));
+		dsSinhVien.add(new SinhVien("SV12", "Nguyá»…n Quang DÅ©ng", true, "03312598591", dsPhong.get(4)));
+		dsSinhVien.add(new SinhVien("SV13", "Nguyá»…n Thiá»‡n Giang", true, "09331529049", dsPhong.get(5)));
+		dsSinhVien.add(new SinhVien("SV14", "Nguyá»…n Trá»�ng KhÃ¡nh", true, "09556752852", dsPhong.get(5)));
+		dsSinhVien.add(new SinhVien("SV15", "Phan Báº£o Long", true, "03758710360", dsPhong.get(6)));
+		dsSinhVien.add(new SinhVien("SV16", "Cao Kháº¯c Minh", true, "03512548013", dsPhong.get(6)));
+		dsSinhVien.add(new SinhVien("SV17", "Ä�oÃ n KiÃªn Trung", true, "09655516844", dsPhong.get(6)));
+		dsSinhVien.add(new SinhVien("SV18", "Huá»³nh Huy CÆ°á»�ng", true, "03578507626", dsPhong.get(10)));
+		dsSinhVien.add(new SinhVien("SV19", "Danh HoÃ ng Giang", true, "098559527928", dsPhong.get(10)));
+		dsSinhVien.add(new SinhVien("SV20", "Ä�á»— Má»¹ Loan", false, "03515538943", dsPhong.get(11)));
+		dsSinhVien.add(new SinhVien("SV21", "Nguyá»…n PhÆ°Æ¡ng Lan", false, "09959743180", dsPhong.get(11)));
+		dsSinhVien.add(new SinhVien("SV22", "Trá»‹nh ThÃºy Anh", false, "03565533549", dsPhong.get(11)));
+		dsSinhVien.add(new SinhVien("SV23", "LÆ°Æ¡ng Báº¡ch Loan", false, "09351210183", dsPhong.get(12)));
+		dsSinhVien.add(new SinhVien("SV24", "NghiÃªm Diá»‡u HÃ ", false, "03364557138", dsPhong.get(12)));
+		dsSinhVien.add(new SinhVien("SV25", "Nguyá»…n Háº£i ChÃ¢u", false, "0333129573", dsPhong.get(12)));
+		dsSinhVien.add(new SinhVien("SV26", "VÅ© Báº¡ch Yáº¿n", false, "0335979171", dsPhong.get(14)));
+		dsSinhVien.add(new SinhVien("SV27", "Nguyá»…n BÃ­ch Thá»§y", false, "09915542642", dsPhong.get(14)));
+		dsSinhVien.add(new SinhVien("SV28", "Viá»‡t Má»¹ Kiá»�u", false, "09532563250", dsPhong.get(15)));
+		dsSinhVien.add(new SinhVien("SV29", "Nguyá»…n Linh SÆ°Æ¡ng SÆ°Æ¡ng", false, "09857975293", dsPhong.get(15)));
+		dsSinhVien.add(new SinhVien("SV30", "VÅ© BÃ­ch VÃ¢n", false, "03368595027", dsPhong.get(15)));
 
 		dsPhong.get(0).dssv_phong.add(dsSinhVien.get(0));
 		dsPhong.get(0).dssv_phong.add(dsSinhVien.get(1));
@@ -509,7 +509,7 @@ public class QuanLyKTX {
 		dsPhong.get(15).dssv_phong.add(dsSinhVien.get(28));
 		dsPhong.get(15).dssv_phong.add(dsSinhVien.get(29));
 	}
-	// Liệt kê danh sách các loại phòng
+	// Liá»‡t kÃª danh sÃ¡ch cÃ¡c loáº¡i phÃ²ng
 	public static void Linq01()
 	{
 		// lambda
@@ -530,7 +530,7 @@ public class QuanLyKTX {
 		}
 	}
 
-	// Cho biết thông tin một phòng
+	// Cho biáº¿t thÃ´ng tin má»™t phÃ²ng
 	public static void Linq02(String maPhong)
 	{
 		Phong p = dsPhong
@@ -540,12 +540,12 @@ public class QuanLyKTX {
 				.get();
 		if (p != null)
 		{
-			System.out.println("Thông tin phong:");
+			System.out.println("ThÃ´ng tin phong:");
 			System.out.println(p.maPhong+"-"+p.maLoaiPhong+"-"+p.maToa+"-"+
 					p.trangThai+"-"+p.loaiPhong.tenLoaiPhong);
 		}
 		else
-			System.out.println("Không có thợ có mã thợ "+"-"+ maPhong);
+			System.out.println("KhÃ´ng cÃ³ thá»£ cÃ³ mÃ£ thá»£ "+"-"+ maPhong);
 	}
 	
 	public static void main(String[] args)
@@ -577,6 +577,5 @@ public class QuanLyKTX {
 		//Linq01();
 		System.out.println("----------------");
 		Linq02("P02");
-
 	}
 }
